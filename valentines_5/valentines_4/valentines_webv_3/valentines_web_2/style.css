@@ -1,0 +1,129 @@
+/* Apply a soft pink background */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(to bottom, #FDE2E4, #FADADD);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Container for everything */
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Image container styles */
+  #image-container {
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  #image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* border-radius:50%; */
+  }
+
+  /* Only the initial image will be circular */
+#initial-image {
+  width: 200px;       /* Ensure the image is square */
+  height: 200px;
+  object-fit: cover;  /* Crop to fill the container */
+  border-radius: 50%; /* Makes the image circular */
+}
+
+  
+  /* Valentine's Day Question */
+  #question {
+    font-family: 'Sacramento', cursive;
+    font-size: 48px;
+    color: #5D001E;
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  /* Buttons Container */
+  #buttons-container {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* General Button Styling */
+  button {
+    padding: 15px 30px;
+    font-size: 24px;
+    font-family: 'Sacramento', cursive;
+    background-color: #FB607F;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  /* "Yes" Button */
+  #yes-button {
+    min-width: 140px;
+    min-height: 50px;
+  }
+  #yes-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* "No" Button */
+  #no-button {
+    min-width: 140px;
+    min-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FB607F;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 24px;
+    font-family: 'Sacramento', cursive;
+    cursor: pointer;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+  #no-button:hover {
+    transform: none;
+  }
+  
+  /* Thank You Message Styling */
+  #thank-you-message {
+    font-family: 'Sacramento', cursive;
+    font-size: 36px;
+    color: #5D001E;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+  }
+  
